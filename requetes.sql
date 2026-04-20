@@ -9,7 +9,7 @@
 
 --Chiffre d'affaires total
 
-/*SELECT SUM(prix * qte)
+/*SELECT SUM(prix * qte) AS CA
 FROM ventes;
 */
 
