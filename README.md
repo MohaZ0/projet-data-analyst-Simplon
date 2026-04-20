@@ -1,59 +1,32 @@
-# Qu'est-ce que c'est ?
+# Projet Positionnement - Data Analyst Simplon
 
-Ceci est un projet de visualisation de données, qui utilise le langage de programmation Pyhton.
-Il utilise deux outils : [pandas](https://pandas.pydata.org/about/) et [plotly](https://plotly.com/python/).
+Analyse des ventes d'une PME (Simplon - test de positionnement).
 
-- Pandas va nous permettre de télécharger un fichier de données CSV depuis une URL.
-- Plotly va nous permettre de générer des graphiques puis de les exporter en page web (au format HTML).
+## Contexte
+À partir d'un fichier `ventes.csv` (39 lignes, 3 produits, 2 régions), j'ai réalisé :
+- 3 requêtes SQL (CA total, ventes par produit, ventes par région)
+- 2 graphiques Python avec Plotly (camemberts)
+- Une synthèse des résultats
 
-# Démarrer le projet dans GitHub Codespaces
-* Cliquez sur "Utiliser ce modèle" ("Use this template") en haut à droite de la page, puis sur "Créer un nouveau dépôt". [Voici les étapes pour créer un dépôt](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template). Si vous n'avez pas de compte GitHub, il vous sera demandé d'en créer un avant de pouvoir créer le dépôt.
-* Une fois dans votre dépôt, ouvrez le site dans un Codespace en cliquant sur Code > Codespaces, puis créez un nouveau Codespace sur votre branche principale.
+## Contenu du repo
+- `ventes.csv` - Jeu de données source
+- `Ventes_par_produit.py` + `.html` - Camembert des quantités vendues par produit
+- `CA_par_produit.py` + `.html` - Camembert du CA par produit
+- `synthese.md` - Résultats SQL et conclusions
+- `requirements.txt` - Dépendances Python
 
-<img alt="Créer un Codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
+## Résultats clés
+- **CA total : 44 825 €**
+- **Produit leader : Produit A** (1750 unités, 17 500 €)
+- **Région la plus forte : Sud** (1775 unités, 24 100 €)
 
-## Attendez que l’environnement de travail sur Codespace soit prêt
+Voir [synthese.md](synthese.md) pour le détail.
 
-L'environnement de travail Codespace va se construire automatiquement au premier lancement. Cela peut prendre plusieurs minutes.
+## Lancer les scripts
+```bash
+python Ventes_par_produit.py
+python CA_par_produit.py
+```
 
-L’environnement est prêt lorsque vous voyez apparaître en bas de la page les boutons suivants :
-
-    💬 MESSAGE DE BIENVENUE
-
-    💻 TERMINAL
-
-    🔎 SPLIT
-
-    🏠 PREVIEW
-
-➡️ Ne touchez à rien pendant le chargement.
-
-# Le projet
-## Comment ça marche ?
-
-* `README.md`: Il s'agit de ce fichier, que vous lisez en ce moment même.
-
-* `app.py`: ceci est un fichier python, le coeur du projet.
-
-Pour executer le fichier Python et ainsi générer un graphique sous forme de page web, cliquez sur le bouton "💻 TERMINAL" depuis la barre d'outils en bas de page.
-
-Puis écrivez la commande suivante : `python3 app.py`.
-
-Cette commande se divise en deux partie : 
-- d'abord "python3" qui indique que l'on souhaite utiliser Python, et plus précisemment, la version 3.
-- Puis "app.py" qui indique que l'on souhaite exécuter le programme python contenu dans le fichier "app.py" (avec Python3 donc).
-
-Appuyez sur la touche `Entrée` de votre clavier, après quelques secondes d'exécution, vous devriez obtenir un message de succès.
-
-## Observer son résultat
-
-Cliquez sur le bouton "🏠 PREVIEW" depuis la barre d'outils en bas de page.
-Depuis la nouvelle fenêtre de votre navigateur qui vient de s'ouvrir, sélectionner le fichier "ventes-par-region.html".
-
-Vous venez d'ouvrir le graphique en version web généré par le fichier "app.py" exécuté avec Python3 !
-
-Prenez le temps de lire, d'analyser voir même de bidouiller le fichier "app.py" puis lancez-vous dans les consignes du projet pour la sélection Simplon !
-
-# Publier vos modifications sur votre propre dépôt GitHub
-Une fois que vous avez terminé de travailler sur les consignes du projet et que vous souhaitez publier vos modifications dans votre dépôt, vous devrez suivre les étapes décrites dans la section « Validation (commit) de vos modifications » de [cette ressource](https://docs.github.com/fr/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#validation-commit-de-vos-modifications
-).
+## Auteur
+Mohamed (MohaZ0)
