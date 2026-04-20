@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python Ventes_par_produit.py
 python CA_par_produit.py
 ```
-Ca génère 2 fichiers html à ouvrir dans le navigateur.
+Ça génère 2 fichiers html à ouvrir dans le navigateur.
 
 ## Fichiers
 - requetes.sql : mes requêtes SQL

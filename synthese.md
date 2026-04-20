@@ -1,11 +1,11 @@
-# Synthese des resultats
+# Synthèse des résultats
 
-Analyse du fichier ventes.csv (39 lignes, 3 produits A/B/C, 2 regions Nord/Sud).
+Analyse du fichier ventes.csv (39 lignes, 3 produits A/B/C, 2 régions Nord/Sud).
 
 ## Chiffre d'affaires total
-Resultat : 44825
+Résultat : 44825
 
-Requete utilisee :
+Requête utilisée :
 ```sql
 SELECT SUM(prix * qte) AS chiffre_affaires_total
 FROM ventes;
@@ -22,7 +22,7 @@ FROM ventes
 GROUP BY produit;
 ```
 
-## Ventes par region
+## Ventes par région
 - Nord : 1605
 - Sud : 1775
 
@@ -33,4 +33,4 @@ GROUP BY region;
 ```
 
 ## Ce que je retiens
-Le produit A est celui qui se vend le plus en quantite et c'est aussi celui qui rapporte le plus de CA (17500 sur 44825). La region Sud vend un peu plus que le Nord.
+Le produit A est celui qui se vend le plus en quantité et c'est aussi celui qui rapporte le plus de CA (17500 sur 44825). La région Sud vend un peu plus que le Nord.

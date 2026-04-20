@@ -1,5 +1,5 @@
  
- --Requete de base 
+ --Requête de base 
  
  /*SELECT * 
  FROM ventes;
@@ -9,7 +9,7 @@
 
 --Chiffre d'affaires total
 
-/*SELECT SUM(prix * qte) AS chiffre_affaires_total
+/*SELECT SUM(prix * qte)
 FROM ventes;
 */
 
@@ -22,7 +22,7 @@ FROM ventes
 GROUP BY produit;
 */
 
---Ventes par region
+--Ventes par région
 
 SELECT region, SUM(qte) AS Quantite
 FROM ventes
