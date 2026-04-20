@@ -29,4 +29,4 @@ python CA_par_produit.py
 ```
 
 ## Auteur
-Mohamed (MohaZ0)
+Mohamed Belhadef
