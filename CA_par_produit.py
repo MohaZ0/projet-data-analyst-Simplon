@@ -7,6 +7,6 @@ données['CA'] = données['prix'] * données['qte']
 
 figure = px.pie(données, values='CA', names='produit', title='CA par produit')
 
-figure.write_html('CA-par-produit.html')
+figure.write_html('CA_par_produit.html')
 
-print('CA-par-produit.html généré avec succès !')
+print('CA_par_produit.html généré avec succès !')
