@@ -1,32 +1,25 @@
-# Projet Positionnement - Data Analyst Simplon
+# Projet data analyst - Simplon
 
-Analyse des ventes d'une PME (Simplon - test de positionnement).
+Test de positionnement pour la formation Simplon Data Analyst.
 
-## Contexte
-À partir d'un fichier `ventes.csv` (39 lignes, 3 produits, 2 régions), j'ai réalisé :
-- 3 requêtes SQL (CA total, ventes par produit, ventes par région)
-- 2 graphiques Python avec Plotly (camemberts)
-- Une synthèse des résultats
+Le but : analyser un petit jeu de ventes (ventes.csv), sortir quelques chiffres en SQL et faire 2 graphiques en Python.
 
-## Contenu du repo
-- `ventes.csv` - Jeu de données source
-- `Ventes_par_produit.py` + `.html` - Camembert des quantités vendues par produit
-- `CA_par_produit.py` + `.html` - Camembert du CA par produit
-- `synthese.md` - Résultats SQL et conclusions
-- `requirements.txt` - Dépendances Python
+## Ce que j'ai fait
+- 3 requêtes SQL sur sqliteonline (chiffre d'affaires total, ventes par produit, ventes par région)
+- 2 camemberts avec plotly (ventes par produit, CA par produit)
+- Une petite synthèse avec les résultats
 
-## Résultats clés
-- **CA total : 44 825 €**
-- **Produit leader : Produit A** (1750 unités, 17 500 €)
-- **Région la plus forte : Sud** (1775 unités, 24 100 €)
-
-Voir [synthese.md](synthese.md) pour le détail.
-
-## Lancer les scripts
-```bash
+## Comment lancer les scripts
+```
+pip install -r requirements.txt
 python Ventes_par_produit.py
 python CA_par_produit.py
 ```
+Ca génère 2 fichiers html à ouvrir dans le navigateur.
 
-## Auteur
+## Fichiers
+- requetes.sql : mes requêtes SQL
+- synthese.md : les résultats
+- les 2 .py : les graphiques
+
 Mohamed Belhadef
