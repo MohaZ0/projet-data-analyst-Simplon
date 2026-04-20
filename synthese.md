@@ -11,31 +11,36 @@
 **44 825 €**
 
 ```sql
-SELECT SUM(prix * qte) AS chiffre_affaires_total FROM ventes;
+SELECT SUM(prix * qte)
+FROM ventes;
 ```
 
 ### 2. Ventes par produit (quantités)
-| Produit   | Quantité |
+| Produit   | quantite |
 |-----------|----------|
 | Produit A | 1750     |
 | Produit B | 1055     |
 | Produit C | 575      |
 
 ```sql
-SELECT produit, SUM(qte) FROM ventes GROUP BY produit;
+SELECT produit, SUM(qte) AS quantite
+FROM ventes
+GROUP BY produit;
 ```
 
 ### 3. Ventes par région (quantités)
-| Région | Quantité |
+| region | Quantite |
 |--------|----------|
 | Nord   | 1605     |
 | Sud    | 1775     |
 
 ```sql
-SELECT region, SUM(qte) AS Quantite FROM ventes GROUP BY region;
+SELECT region, SUM(qte) AS Quantite
+FROM ventes
+GROUP BY region;
 ```
 
-## CA par produit (bonus)
+## CA par produit (bonus, calculé en Python)
 | Produit   | CA (€) |
 |-----------|--------|
 | Produit A | 17 500 |
